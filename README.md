@@ -2,7 +2,7 @@
 
 Hi! This is my version of the classic Battleship game, built as part of the Full Stack JavaScript path on [The Odin Project](https://theodinproject.com). 
 
-**[Live Demo Link](YOUR_LIVE_DEMO_URL_HERE)**
+**[Live Demo Link]( https://blessingay5.github.io/Battleship-Game/)**
 
 ## Features
 
