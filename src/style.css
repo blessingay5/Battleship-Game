@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+#status-message {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.controls {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.boards-container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.board-wrapper {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  /* 11 columns: 1 label column + 10 grid columns */
+  grid-template-columns: repeat(11, 35px);
+  grid-template-rows: repeat(11, 35px);
+  gap: 2px;
+  background-color: #334155;
+  padding: 6px;
+  border-radius: 6px;
+}
+.grid-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  user-select: none;
+}
+
+.cell {
+  background-color: #1e293b;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.cell.ship {
+  background-color: #64748b;
+}
+
+.cell.hit {
+  background-color: #cfbebe; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell.hit::after {
+  content: 'X';
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #dc2626; 
+  line-height: 1;
+}
+
+.cell.miss::after {
+  content: '•';
+  font-size: 1.5rem;
+  color: #0f172a;
+}
