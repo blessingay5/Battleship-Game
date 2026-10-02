@@ -1,4 +1,4 @@
-class ship {
+export class Ship {
     constructor(length) {
         this.length = length;
         this.hits = 0;
@@ -14,5 +14,3 @@ class ship {
         return this.hits >= this.length;
     }
 }
-
-export { ship };
